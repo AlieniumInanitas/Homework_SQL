@@ -16,8 +16,8 @@ create table if not exists Album (
 
 create table if not exists Track (
 	id serial primary key,
-	name varchar (100) not null,
-	duration decimal (3,2) not null,
+	name smallint not null,
+	duration smallint not null,
 	album integer not null references Album(id)
 );
 
